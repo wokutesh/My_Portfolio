@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abel - Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Navigation -->
@@ -27,24 +31,30 @@
     <!-- Hero Section  -->
     <section id="home" class="hero">
       <div class="hero-content">
-        <h1>Hi, I'm <span class="highlight">Abel Adane</span></h1>
-        <p class="subtitle">Computer Science & Engineering Student</p>
-        <div class="cta-buttons">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
+        <div class="hero-left">
+          <h1>Hi, I'm <span class="highlight">Abel Adane</span></h1>
+          <p class="subtitle">Computer Science & Engineering Student</p>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+          </div>
+        </div>
+        <div>
+          <img class="about-img" src="./assets//Icons/Image.png" alt="" />
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <!-- About Me Section -->
+    <section id="about" class="AboutMe-section">
       <h2>Who am i</h2>
       <div class="about-content">
         <div class="about-text">
-          <div class="about-corner-img">
+          <!-- <div class="about-corner-img">
             <img src="./assets/Icons/code.png" alt="" />
 
             <img src="./assets/Icons/tech.png" alt="" />
-          </div>
+          </div> -->
           <div class="about-text-content">
             <p>
               Hi! I'm Abel Adane , a Computer Science and Engineering student
@@ -54,16 +64,17 @@
               working on projects ranging from simple website clones to a
               variety of web applications. I work with both front-end and
               back-end technologies, including React, Node.js, Express, and
-              MySQL. I also enjoy using Git and have experience deploying
-              applications on platforms like Render and Vercel.
+              MySQL.
             </p>
             <div></div>
           </div>
-
-          <div class="about-corner-img">
+          <div class="aboutImg">
+            <img class="about-img" src="./assets/Icons/Image.png" alt="" />
+          </div>
+          <!-- <div class="about-corner-img">
             <img src="./assets//Icons/refiing.png" alt="" />
             <img src="./assets//Icons/develope.png" alt="" />
-          </div>
+          </div> -->
           <div class="about-text-content">
             <p>
               Currently, I’m focused on both learning and refining my skills to
@@ -75,13 +86,6 @@
               personal projects. I love taking on new challenges, and I’m
               excited about what’s next!
             </p>
-          </div>
-          <div class="education">
-            <h3>Education</h3>
-            <div class="education-item">
-              <h4>B.S. in Computer Science & Engineering</h4>
-              <p>ASTU | 2021 - Present</p>
-            </div>
           </div>
         </div>
       </div>
@@ -193,6 +197,43 @@
               <a href="#" class="btn small secondary">Code</a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Let's Get In Touch</h2>
+      <!-- Email -->
+      <div class="contact-container">
+        <div class="contact-item">
+          <div class="icon-container">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <a href="mailto:your-email@example.com" class="contact-link"
+            >abel.adane27@gmail.com</a
+          >
+        </div>
+        <!-- Phone -->
+        <div class="contact-item">
+          <div class="icon-container">
+            <i class="fas fa-phone"></i>
+          </div>
+          <a href="tel:+1234567890" class="contact-link">
+            Let's talk on +251 987090231</a
+          >
+        </div>
+        <!-- Location -->
+        <div class="contact-item">
+          <div class="icon-container">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <a
+            href="https://maps.app.goo.gl/6ApB3zUDtvRehGN87"
+            target="_blank"
+            class="contact-link"
+          >
+            Location | Adama , Ethiopia
+          </a>
         </div>
       </div>
     </section>
