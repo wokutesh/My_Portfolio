@@ -3,7 +3,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
 menuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+  navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
 });
 
 // Smooth Scrolling for Navigation Links
@@ -15,10 +15,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       target.scrollIntoView({
         behavior: "smooth",
       });
-
       // Close mobile menu if open
       if (window.innerWidth <= 768) {
-        navLinks.classList.remove("active");
+        navLinks.style.display = "none";
       }
     }
   });
